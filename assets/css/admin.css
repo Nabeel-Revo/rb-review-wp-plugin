@@ -1,0 +1,117 @@
+/**
+ * Rating Bulls Reviews - Admin Styles
+ */
+
+.rbr-admin-wrap {
+    margin-top: 20px;
+}
+
+.rbr-admin-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.rbr-admin-main {
+    flex: 1;
+    min-width: 400px;
+}
+
+.rbr-admin-sidebar {
+    width: 300px;
+}
+
+.rbr-settings-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rbr-settings-card h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: #1d2327;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+}
+
+.rbr-settings-card h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #1d2327;
+}
+
+.rbr-settings-card code {
+    display: inline-block;
+    background: #f0f0f1;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.rbr-settings-card .description {
+    color: #646970;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.rbr-status {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.rbr-status-success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.rbr-status-error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+/* Table styles */
+.rbr-settings-card .form-table th {
+    padding-left: 0;
+    width: 160px;
+}
+
+.rbr-settings-card .form-table td {
+    padding-left: 0;
+}
+
+/* Button adjustments */
+.rbr-settings-card .button {
+    margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .rbr-admin-container {
+        flex-direction: column;
+    }
+    
+    .rbr-admin-main,
+    .rbr-admin-sidebar {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .rbr-settings-card .form-table th,
+    .rbr-settings-card .form-table td {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+}

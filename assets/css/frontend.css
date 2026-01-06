@@ -1,0 +1,492 @@
+/**
+ * Rating Bulls Reviews - Frontend Styles
+ * 
+ * Brand Colors:
+ * - Primary Blue: #013F88
+ * - Deep Blue: #01183C
+ * - Electric Green: #00FF55
+ * - Rating Green: #73CF11
+ */
+
+/* ========================================
+   CSS Variables
+   ======================================== */
+:root {
+    --rbr-primary-blue: #013F88;
+    --rbr-deep-blue: #01183C;
+    --rbr-electric-green: #00FF55;
+    --rbr-rating-green: #73CF11;
+    --rbr-near-black: #00060F;
+    --rbr-white: #FFFFFF;
+    --rbr-gray-50: #F9FAFB;
+    --rbr-gray-100: #F3F4F6;
+    --rbr-gray-200: #E5E7EB;
+    --rbr-gray-400: #9CA3AF;
+    --rbr-gray-500: #6B7280;
+    --rbr-gray-600: #4B5563;
+    --rbr-gray-700: #374151;
+    --rbr-border-radius: 30px;
+    --rbr-border-radius-sm: 16px;
+    --rbr-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --rbr-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* ========================================
+   Widget Container
+   ======================================== */
+.rbr-widget {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    flex-direction: row;
+    background: var(--rbr-white);
+    border: 1px solid var(--rbr-gray-200);
+    border-radius: var(--rbr-border-radius);
+    /* box-shadow: var(--rbr-shadow-md); */
+    overflow: hidden;
+    max-width: 1400px;
+}
+
+/* ========================================
+   Left Section: Header with Branding
+   ======================================== */
+.rbr-widget-header {
+    /* background: linear-gradient(135deg, var(--rbr-deep-blue) 0%, var(--rbr-primary-blue) 100%); */
+    background: var(--rbr-primary-blue);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    max-width: 350px;
+}
+
+/* Logo */
+.rbr-logo {
+    margin-bottom: 20px;
+}
+.rbr-svg-logo {
+    width: 170px !important;
+    height: 100% !important;
+}
+
+.rbr-logo-rating {
+    color: var(--rbr-white);
+}
+
+.rbr-logo-bulls {
+    color: var(--rbr-electric-green);
+    font-style: italic;
+}
+
+/* Rating Box */
+.rbr-rating-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    border-radius: var(--rbr-border-radius-sm);
+    margin-bottom: 16px;
+}
+
+.rbr-rating-number {
+    font-size: 42px;
+    font-weight: 500;
+    color: var(--rbr-white);
+    line-height: 1;
+}
+
+.rbr-rating-label {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--rbr-white);
+    margin-top: 4px;
+}
+
+/* Bull Rating Icons */
+.rbr-bull-rating {
+    margin-bottom: 12px;
+}
+
+.rbr-bull-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rbr-bull-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.rbr-bull-svg {
+    display: block;
+}
+
+/* Review Count */
+.rbr-review-count {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+}
+
+/* ========================================
+   Right Section: Reviews
+   ======================================== */
+.rbr-widget-body {
+    flex: 1;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    background: var(--rbr-gray-50);
+}
+
+/* Reviews Header */
+.rbr-reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--rbr-gray-200);
+}
+
+.rbr-reviews-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--rbr-near-black);
+    margin: 0;
+}
+
+.rbr-see-all-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--rbr-primary-blue) !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s ease;
+}
+
+.rbr-see-all-link:hover {
+    color: var(--rbr-deep-blue) !important;
+}
+
+.rbr-arrow {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* Reviews Grid */
+.rbr-reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    flex: 1;
+}
+
+/* Review Card */
+.rbr-review-card {
+    background: var(--rbr-white);
+    border-radius: var(--rbr-border-radius-sm);
+    padding: 20px;
+    /* box-shadow: var(--rbr-shadow); */
+    display: flex;
+    flex-direction: column;
+}
+
+.rbr-review-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+/* Reviewer Avatar */
+.rbr-reviewer-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rbr-white);
+    font-size: 14px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.rbr-reviewer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.rbr-reviewer-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--rbr-near-black);
+}
+
+.rbr-review-bulls {
+    display: flex;
+}
+
+.rbr-bull-icons-sm .rbr-bull-icon-wrapper {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.rbr-bull-icons-sm .rbr-bull-svg {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+/* Review Content */
+.rbr-review-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--rbr-gray-700);
+    margin: 0 0 8px 0;
+}
+
+.rbr-review-comment {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--rbr-gray-600);
+    margin: 0;
+    flex: 1;
+    /* Limit to 4 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Carousel Dots (Mobile Only) */
+.rbr-carousel-dots {
+    display: none;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.rbr-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--rbr-gray-400);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.rbr-dot-active {
+    background: var(--rbr-primary-blue);
+}
+
+/* Widget Footer */
+.rbr-widget-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rbr-footer-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--rbr-gray-400);
+}
+
+.rbr-footer-text a {
+    color: var(--rbr-gray-400) !important;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.rbr-footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* ========================================
+   Error Message
+   ======================================== */
+.rbr-error {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    color: #991B1B;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.rbr-error a {
+    color: #991B1B;
+    font-weight: 600;
+}
+
+/* ========================================
+   Responsive: Tablet
+   ======================================== */
+@media (max-width: 900px) {
+    .rbr-reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .rbr-review-card:nth-child(n+3) {
+        display: none;
+    }
+}
+
+/* ========================================
+   Responsive: Mobile
+   ======================================== */
+@media (max-width: 640px) {
+    .rbr-widget {
+        flex-direction: column;
+        max-width: 400px;
+    }
+    
+    .rbr-widget-header {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+        padding: 28px 24px;
+    }
+    
+    .rbr-widget-body {
+        padding: 20px;
+    }
+    
+    .rbr-reviews-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .rbr-reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    /* Hide all cards by default on mobile */
+    .rbr-review-card {
+        display: none;
+    }
+    
+    /* Show first card by default, or card with active class */
+    .rbr-review-card:first-child {
+        display: flex;
+    }
+    
+    .rbr-review-card.rbr-carousel-active {
+        display: flex;
+    }
+    
+    /* When any card is active, hide the first-child default */
+    .rbr-reviews-grid:has(.rbr-carousel-active) .rbr-review-card:first-child:not(.rbr-carousel-active) {
+        display: none;
+    }
+    
+    .rbr-carousel-dots {
+        display: flex;
+    }
+    
+    .rbr-see-all-link {
+        align-self: flex-end;
+        margin-top: 8px;
+    }
+}
+
+/* ========================================
+   Badge Styles (Compact Version)
+   ======================================== */
+.rbr-badge {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    display: inline-block;
+}
+
+.rbr-badge-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.rbr-badge-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--rbr-white);
+    border: 1px solid var(--rbr-gray-200);
+    border-radius: var(--rbr-border-radius-sm);
+    padding: 12px 16px;
+    box-shadow: var(--rbr-shadow);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.rbr-badge-link:hover .rbr-badge-inner {
+    box-shadow: var(--rbr-shadow-md);
+    transform: translateY(-1px);
+}
+
+.rbr-badge-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    background: var(--rbr-deep-blue);
+    border-radius: 6px;
+}
+
+.rbr-badge-logo-text {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.rbr-badge-logo-rating {
+    color: var(--rbr-white);
+}
+
+.rbr-badge-logo-bulls {
+    color: var(--rbr-electric-green);
+}
+
+.rbr-badge-content {
+    flex: 1;
+}
+
+.rbr-badge-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.rbr-badge-score {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--rbr-near-black);
+}
+
+.rbr-badge-label {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: var(--rbr-white);
+}
+
+.rbr-badge-meta {
+    font-size: 12px;
+    color: var(--rbr-gray-600);
+}
+
+.rbr-badge-meta a {
+    color: var(--rbr-primary-blue);
+    font-weight: 600;
+    text-decoration: none;
+}
