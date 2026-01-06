@@ -24,8 +24,8 @@ define('RBR_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('RBR_API_BASE', 'https://api-v1.ratingbulls.com/public/client');
 
 // GitHub repository configuration for auto-updates
-define('RBR_GITHUB_USERNAME', 'RatingBulls');
-define('RBR_GITHUB_REPO', 'rating-bulls-wp-plugin');
+define('RBR_GITHUB_USERNAME', 'Nabeel-Revo');
+define('RBR_GITHUB_REPO', 'rb-review-wp-plugin');
 
 /**
  * Get rating label and color based on rating value
