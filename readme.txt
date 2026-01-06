@@ -3,7 +3,7 @@ Contributors: ratingbulls
 Tags: reviews, ratings, brokerage, trading, testimonials, widget
 Requires at least: 5.0
 Tested up to: 6.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -66,6 +66,9 @@ The plugin checks for updates from our GitHub repository. When a new version is 
 3. Settings page in WordPress admin
 
 == Changelog ==
+
+= 1.1.1 =
+* Test release
 
 = 1.1.0 =
 * Added automatic updates from GitHub releases

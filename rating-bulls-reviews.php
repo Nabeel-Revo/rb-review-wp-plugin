@@ -3,7 +3,7 @@
  * Plugin Name: Rating Bulls Reviews
  * Plugin URI: https://ratingbulls.com
  * Description: Display your Rating Bulls reviews and ratings on your WordPress site.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Rating Bulls
  * Author URI: https://ratingbulls.com
  * License: GPL v2 or later
@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('RBR_VERSION', '1.1.0');
+define('RBR_VERSION', '1.1.1');
 define('RBR_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('RBR_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('RBR_API_BASE', 'https://api-v1.ratingbulls.com/public/client');
